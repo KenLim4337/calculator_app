@@ -1,0 +1,96 @@
+$pink:#ffb7c5;
+$navy: #12194d;
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: $navy;
+}
+
+main {
+    overflow: visible;
+
+    form.calc-form{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: 40px auto;
+        padding: 0 30px 60px;
+        width: 400px;
+        max-height: 600px;
+        overflow-y: auto;
+        font-family: 'Press Start 2P', cursive;
+        
+        @media screen and (max-width: 420px) {
+            width: 100%;
+            height: auto;
+        }
+
+        @media screen and (max-height: 490px) {
+            position: static;
+            width: calc(100% - 60px);
+            padding: 0;
+            margin: 30px;
+            height: auto;
+        }
+
+        .calc-display {
+            background-color: white;
+            font-size: 14px;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: $pink 0px 5px 20px;
+            overflow-x: auto;
+        }
+
+        .input-row {
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+
+            input {
+                flex-grow: 1;
+                padding: 15px 10px;
+                margin: 5px;
+                border-radius: 5px;
+                background-color: $pink;
+                color: $navy;
+                border: $pink 3px solid;
+                transition: 0.2s ease all;
+                cursor: pointer;
+
+                &.double-button {
+                    min-width: calc(40% - 10px);
+                }
+
+                &:hover {
+                    color: $pink;
+                    background-color: $navy;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 20px;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 14px;
+    color: $pink;
+
+    @media screen and (max-height: 490px) {
+        position: static;
+        margin: 10px 0;
+        padding: 0 20px;
+        width: 100%;
+    }
+}

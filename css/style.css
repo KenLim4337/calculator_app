@@ -1,0 +1,109 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #12194d;
+}
+
+main {
+  overflow: visible;
+}
+
+main form.calc-form {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 40px auto;
+  padding: 0 30px 60px;
+  width: 400px;
+  max-height: 600px;
+  overflow-y: auto;
+  font-family: 'Press Start 2P', cursive;
+}
+
+@media screen and (max-width: 420px) {
+  main form.calc-form {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-height: 490px) {
+  main form.calc-form {
+    position: static;
+    width: calc(100% - 60px);
+    padding: 0;
+    margin: 30px;
+    height: auto;
+  }
+}
+
+main form.calc-form .calc-display {
+  background-color: white;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  -webkit-box-shadow: #ffb7c5 0px 5px 20px;
+          box-shadow: #ffb7c5 0px 5px 20px;
+  overflow-x: auto;
+}
+
+main form.calc-form .input-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: 100%;
+}
+
+main form.calc-form .input-row input {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  padding: 15px 10px;
+  margin: 5px;
+  border-radius: 5px;
+  background-color: #ffb7c5;
+  color: #12194d;
+  border: #ffb7c5 3px solid;
+  -webkit-transition: 0.2s ease all;
+  transition: 0.2s ease all;
+  cursor: pointer;
+}
+
+main form.calc-form .input-row input.double-button {
+  min-width: calc(40% - 10px);
+}
+
+main form.calc-form .input-row input:hover {
+  color: #ffb7c5;
+  background-color: #12194d;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  color: #ffb7c5;
+}
+
+@media screen and (max-height: 490px) {
+  footer {
+    position: static;
+    margin: 10px 0;
+    padding: 0 20px;
+    width: 100%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

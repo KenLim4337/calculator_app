@@ -1,0 +1,67 @@
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Calculator App | Jude Lim </title>
+        <!--Normalize CSS-->
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <script src="js/jquery-3.6.0.min.js"></script>
+    </head>
+    <body>
+        <main>
+            <form id="calculator" class="calc-form">
+                <div type="text" class="calc-display" name="display" id="display"></div>
+
+                <div class="input-row">
+                    <input type="button" value="DEL" title="Delete">
+                    <input type="button" value="CLR" title="Clear All">
+                </div>
+
+                <div class="input-row">
+                    <input type="button" value="7" title="Seven">
+                    <input type="button" value="8" title="Eight">
+                    <input type="button" value="9" title="Nine">
+                    <input type="button" value="(" title="Open Parenthesis">
+                    <input type="button" value=")" title="Close Parenthesis">
+                </div>
+
+                <div class="input-row">
+                    <input type="button" value="4" title="Four">
+                    <input type="button" value="5" title="Five">
+                    <input type="button" value="6" title="Six">
+                    <input type="button" value="x" title="Times">
+                    <input type="button" value="/" title="Divide">
+                </div>
+
+                
+                <div class="input-row">
+                    <input type="button" value="1" title="One">
+                    <input type="button" value="2" title="Two">
+                    <input type="button" value="3" title="Three">
+                    <input type="button" value="+" title="Plus">
+                    <input type="button" value="-" title="Minus">
+                </div>
+                
+                <div class="input-row">
+                    <input type="button" value="0" title="Zero">
+                    <input type="button" value="." title="Point">
+                    <input type="button" value="^" title="Power">
+                    <input type="submit" class="double-button" value="=" title="Equals">
+                </div>
+            </form>
+        </main>
+
+        <footer>
+            <div class="trademark">
+                Copyright 2022 Jude Lim. All rights reserved.
+            </div>
+            
+        </footer>
+        
+        <script src="js/scripts.js"></script>
+    </body>
+</html>
